@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JLPT 단어 앱</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px;
+      background-color: #f9f9f9;
+    }
+    .word {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .reading {
+      font-size: 24px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .meaning {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>JLPT N3 단어 학습</h1>
+  <div class="word" id="word">-</div>
+  <div class="reading" id="reading">-</div>
+  <div class="meaning" id="meaning">-</div>
+  <button onclick="showRandomWord()">다음 단어</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
